@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+/* Primary text color, subtle background for entire page */
+body {
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* for every Link in general */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* -- CONTAINER LAYOUT */
+.signup-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Left side illustration picture */
+.signup-illustration {
+  flex: 1; /* Take available space left of the form */
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* So text lines up on the left */
+}
+
+/* Left side illustration styles */
+.signup-illustration img {
+  max-width: 80%;
+  margin-bottom: 2rem;
+}
+.signup-illustration h2 {
+  font-size: 1.8rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+.signup-illustration p {
+  color: #666;
+  font-size: 1rem;
+  max-width: 400px;
+}
+
+/* Right side form section */
+.signup-form-section {
+  flex: 1; /* Take other half of the screen */
+  background-color: #fdfdfd;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Form heading / subtitle */
+.signup-form-section h1 {
+  font-size: 2rem;
+  color: #111;
+  margin-bottom: 0.25rem;
+}
+.signup-form-section .subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* -- FORM -- */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem; /* vertical spacing between form rows */
+}
+
+/* We wrap related inputs into .form-row so we can place two side-by-side. */
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  color: #333;
+}
+input,
+select {
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+/* The sign-up button */
+.signup-button {
+  padding: 0.75rem;
+  background-color: #0066cc;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.signup-button:hover {
+  background-color: #005bb5;
+}
+
+/* Already member text */
+.already-member {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* -- Media section to make it responsive depending on the screen  */
+@media (max-width: 992px) {
+  /* On medium screens, reduce left side image width */
+  .signup-illustration img {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack columns vertically if screen is narrow */
+  .signup-container {
+    flex-direction: column;
+  }
+  .signup-illustration,
+  .signup-form-section {
+    flex: unset;
+    width: 100%;
+    padding: 2rem;
+    align-items: center; /* center everything on smaller screens */
+    text-align: center;
+  }
+  .signup-illustration img {
+    max-width: 70%;
+  }
+
+  /* Make form full-width stacked (no side-by-side row) */
+  .form-row {
+    flex-direction: column;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f7f7f7; /* Light gray background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* For links and spaces */
+a {
+  color: #0b3d91;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+
+/* HEADER*/
+header {
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom: 2px solid #ccc;
+  position: relative;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #064663;
+}
+
+header p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+/* "Form" link in top-left corner */
+header a[href="./form.html"] {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-weight: 600;
+  color: #0b3d91;
+}
+
+/** MAIN CONTAINER */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* SECTION HEADINGS */
+section h2 {
+  font-size: 1.4rem;
+  color: #064663;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/*PARAGRAPHS, LISTS*/
+p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* FOOTER **/
+footer {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+footer a {
+  font-weight: 600;
+  color: #0b3d91;
+}
+
+/* RESPONSIVE ADJUSTMENTS*/
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  main {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+
+  section h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}

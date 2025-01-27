@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Media Elements</title>
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <h1>Responsive Media Elements</h1>
+
+    <!-- Picture Element -->
+    <section>
+      <h2>Responsive Picture</h2>
+      <picture class="responsive-picture">
+        <source srcset="landscape large.jpg" media="(min-width: 1024px)" />
+        <source srcset="landscape medium.jpg" media="(min-width: 600px)" />
+        <img
+          src="/media/landscape medium.jpg"
+          alt="A beautiful scene"
+          style="width: 100%"
+        />
+      </picture>
+    </section>
+
+    <!-- Video Element -->
+    <section class="video-wrapper">
+      <h2>Responsive Video</h2>
+      <video controls style="width: 100%">
+        <source src="/media/sample-video-download-mp4.mp4" type="video/mp4" />
+        <source src="/media/sample_1280x720.webm" type="video/webm" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Audio Element -->
+    <section>
+      <h2>Responsive Audio</h2>
+      <audio controls style="width: 100%">
+        <source
+          src="/media/sabrina-carpenter-espresso-official-video-128-ytshorts.savetube.me.mp3"
+          type="audio/mp3"
+        />
+        <source src="/media/1718883178_sample3.ogg" type="audio/ogg" />
+        Your browser does not support the audio tag.
+      </audio>
+    </section>
+  </body>
+</html>

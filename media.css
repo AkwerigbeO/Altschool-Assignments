@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    font-family: "Inter", Arial, sans-serif; 
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  body {
+    padding: 2rem; /* to put Some spacing around the page */
+  }
+  
+  /*headings style*/
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #064663; 
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #0b3d91;
+    text-align: center;
+  }
+  
+  
+  section {
+    background-color: #ffffff;    /* White “card” style background */
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 800px;          
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+ 
+  .responsive-picture {
+    display: block;
+    width: 100%;              
+    max-width: 600px;         
+    margin: 0 auto;            /* Center the picture horizontally */
+    overflow: hidden;          /* So child elements don't overflow a rounded corner, if used */
+    border-radius: 6px;
+    border: 1px solid #eee;
+    background-color: #130b0b;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  
+  .responsive-picture img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+ 
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;          
+    margin: 0 auto;
+    border-radius: 6px;
+    border: 1px solid #eeeeee;
+    background-color: #fafafa;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    overflow:hidden;         
+  }
+ 
+  .video-wrapper video {
+    display: flex; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 0;         
+  }
+  audio {
+    width: 100%;               /* Override any inline styling */
+    outline: none;
+    margin-top: 0.5rem;
+  }
+  
+
+  @media (max-width: 600px) {
+    body {
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 1.6rem;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 1rem;
+      margin: 1rem auto;
+    }
+  }
+
+

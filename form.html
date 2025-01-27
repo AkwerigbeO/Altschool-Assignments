@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AltSchool Signup form</title>
+    <link rel="stylesheet" href="formxindex.css" />
+  </head>
+  <body>
+    <a href="./indexx.html"> Goto About me </a>
+
+    <!-- Mother container, to house 2 divs, 1 for left side that holds the picture, one for the right side of the screen that has the form-->
+    <div class="signup-container">
+      <div class="signup-illustration">
+        <!-- LEFT SIDE: Picture. -->
+        <img src="/media/Study scribble.png" alt="Learning Illustration" />
+        <h2>Learn highly sought after skills without hassle.</h2>
+        <p>
+          Gain the knowledge you need to level up your career with flexible
+          courses.
+        </p>
+      </div>
+      <div class="signup-form-section">
+        <!-- RIGHT SIDE: The actual signup form -->
+        <h1>Signup</h1>
+        <p class="subtitle">Take the next steps to apply at AltSchool Africa</p>
+
+        <form class="signup-form">
+          <!-- Here's the signup form that has sub groups-->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender">
+                <option value="" disabled selected>Select gender</option>
+                <!-- This one shows select gender but also has like a drop down menu of other genders-->
+                <option>Male</option>
+                <option>Female</option>
+                <option>Transgender</option>
+                <option>Non-binary</option>
+                <option>Other</option>
+                <option>Prefer not to say</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" placeholder="mm/dd/yyyy" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="country">Country of Residence</label>
+              <input
+                type="text"
+                id="country"
+                placeholder="Country of Residence"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="state">State of Residence</label>
+              <input
+                type="text"
+                id="state"
+                placeholder="State of Residence"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="hearAboutUs">How did you hear about us?</label>
+            <select id="hearAboutUs">
+              <option value="" disabled selected>Choose an option</option>
+              <option>Google Search</option>
+              <option>Social Media</option>
+              <option>Friend/Colleague</option>
+              <option>LinkedIn</option>
+              <option>Website</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+
+        <p class="already-member">
+          Already an AltScholar? <a href="#">Sign In!</a>
+        </p>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <center>
+      <p>&copy;2024, akwerigbeoke@gmail.com. All rights reserved</p>
+    </center>
+  </footer>
+</html>
